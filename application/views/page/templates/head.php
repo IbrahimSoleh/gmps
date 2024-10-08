@@ -12,8 +12,8 @@
     <meta content="" name="keywords">
 
     <!-- Favicons -->
-    <!-- <link href="<?= base_url('vendor/landingpage/') ?>assets/img/favicon.png" rel="icon"> -->
-    <!-- <link href="<?= base_url('vendor/landingpage/') ?>assets/img/apple-touch-icon.png" rel="apple-touch-icon"> -->
+    <link href="<?= base_url('vendor/admin/') ?>assets/img/logo-gmps.png" rel="icon">
+     
 
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
@@ -73,7 +73,7 @@
                     <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
                     <li><a class="nav-link scrollto" href="#tentang">Tentang</a></li>
                     <li><a class="nav-link scrollto" href="#dokumentasi">Dokumentasi</a></li>
-                    <li><a class="nav-link scrollto" href="#katapengunjung">Kata Pengunjung</a></li>
+                    <li><a class="nav-link scrollto" href="#other">Other</a></li>
                     <!-- <li><a class="nav-link scrollto" href="#team">Team</a></li> -->
                     <!-- <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
                         <ul>
@@ -105,6 +105,6 @@
         <div class="hero-container" data-aos="fade-up">
             <h1><?= $settings['text_sambutan']; ?></h1>
             <h2><?= $settings['desc_sambutan'] ?></h2>
-            <a href="#about" class="btn-get-started scrollto"><i class="bx bx-chevrons-down"></i></a>
+            <a href="#tentang" class="btn-get-started scrollto"><i class="bx bx-chevrons-down"></i></a>
         </div>
     </section><!-- End Hero -->

@@ -18,7 +18,7 @@ class Landingpage extends CI_Controller
             $quote = $this->db->get('tb_quote')->result();
 
             $data = array(
-                'title' => 'Istana Pagaruyuang',
+                'title' => 'GMPS',
                 'isi' => 'page/home',
                 'settings' => $settings,
                 'dokumentasi' => $dokumentasi,
@@ -53,7 +53,7 @@ class Landingpage extends CI_Controller
             $this->load->library('email');
 
             $this->email->from($email, $name);
-            $this->email->to('alfigofranspratamaa@gmail.com');
+            $this->email->to('gerakanmahasiswapulauseribu@gmail.com');
 
             $this->email->subject($subject);
             $this->email->message($message);
@@ -75,7 +75,7 @@ class Landingpage extends CI_Controller
         $dokumentasi = $this->db->get_where('tb_dokumentasi', ['id_dokumentasi' => $id])->row_array();
 
         $data = array(
-            'title' => 'Istana Pagaruyuang',
+            'title' => 'GMPS',
             'isi' => 'page/dokumentasi/detail',
             'settings' => $settings,
             'dokumentasi' => $dokumentasi,
@@ -89,7 +89,7 @@ class Landingpage extends CI_Controller
         $dokumentasi = $this->db->get('tb_dokumentasi')->result();
 
         $data = array(
-            'title' => 'Istana Pagaruyuang',
+            'title' => 'GMPS',
             'isi' => 'page/dokumentasi/all',
             'settings' => $settings,
             'dokumentasi' => $dokumentasi,

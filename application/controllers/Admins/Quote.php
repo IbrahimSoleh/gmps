@@ -8,7 +8,7 @@ class Quote extends CI_Controller
     public function index()
     {
         $data = array(
-            'title' => 'Apa Kata Pengunjung ?',
+            'title' => ' Quotes?',
             'isi' => 'admin/quote/all'
         );
 
@@ -25,7 +25,7 @@ class Quote extends CI_Controller
 
         if ($this->form_validation->run() == FALSE) {
             $data = array(
-                'title' => 'Tambah Apa Kata Pengunjung',
+                'title' => 'Tambah Apa Katanya',
                 'isi' => 'admin/quote/tambah'
             );
 

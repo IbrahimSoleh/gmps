@@ -5,14 +5,12 @@
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    <title>Login Admin Wisata</title>
+    <title>Login Admin GMPS</title>
     <meta content="" name="description">
     <meta content="" name="keywords">
 
     <!-- Favicons -->
-    <link href="<?= base_url('vendor/admin/') ?>assets/img/favicon.png" rel="icon">
-    <link href="<?= base_url('vendor/admin/') ?>assets/img/apple-touch-icon.png" rel="apple-touch-icon">
-
+    <link href="<?= base_url('vendor/admin/') ?>assets/img/logo-gmps.png" rel="icon">
     <!-- Google Fonts -->
     <link href="https://fonts.gstatic.com" rel="preconnect">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
@@ -31,9 +29,11 @@
 
     <style>
         body {
-            background: url("<?= base_url('vendor/images/backround-vector.png') ?>");
             background-repeat: no-repeat;
-            background-size: cover;
+            background-size: auto;
+            background: rgb(255,255,255);
+            background: radial-gradient(circle, rgba(255,255,255,1) 11%, rgba(13,110,253,1) 74%);
+    
         }
     </style>
 
@@ -49,7 +49,7 @@
                             <div class="card mb-3">
                                 <div class="card-body">
                                     <div class="pt-4 pb-2">
-                                        <h5 class="card-title text-center pb-0 fs-4">Login Wisata</h5>
+                                        <h5 class="card-title text-center pb-0 fs-4">Login Heree!</h5>
                                         <p class="text-center small">Masukkan Email dan Password dengan benar.</p>
                                     </div>
                                     <form class="row g-3 needs-validation" novalidate method="post" action="<?= base_url('admin'); ?>">

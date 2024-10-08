@@ -18,7 +18,7 @@ class Dokumentasi extends CI_Controller
 
     public function tambah()
     {
-        $this->form_validation->set_rules('nama_pengunjung', 'nama_pengunjung', 'trim|required');
+        $this->form_validation->set_rules('nama', 'nama', 'trim|required');
         $this->form_validation->set_rules('tanggal', 'tanggal', 'trim|required');
 
         if ($this->form_validation->run() == FALSE) {
@@ -28,7 +28,7 @@ class Dokumentasi extends CI_Controller
             );
             $this->load->view('admin/layout', $data, FALSE);
         } else {
-            $nama_pengunjung = $this->input->post('nama_pengunjung');
+            $nama = $this->input->post('nama');
             $tanggal = $this->input->post('tanggal');
             $deskripsi = $this->input->post('deskripsi');
 
@@ -49,7 +49,7 @@ class Dokumentasi extends CI_Controller
             } else {
                 $data = array(
                     'thumbnail' => $this->upload->data('file_name'),
-                    'nama_pengunjung' => $nama_pengunjung,
+                    'nama' => $nama,
                     'tanggal' => $tanggal,
                     'deskripsi' => $deskripsi,
                 );
@@ -63,7 +63,7 @@ class Dokumentasi extends CI_Controller
 
     public function edit($id)
     {
-        $this->form_validation->set_rules('nama_pengunjung', 'Nama Pengunjung', 'trim|required');
+        $this->form_validation->set_rules('nama', 'Nama', 'trim|required');
         $this->form_validation->set_rules('tanggal', 'Tanggal', 'required');
 
 
@@ -76,7 +76,7 @@ class Dokumentasi extends CI_Controller
 
             $this->load->view('admin/layout', $data, FALSE);
         } else {
-            $nama_pengunjung = $this->input->post('nama_pengunjung');
+            $nama = $this->input->post('nama');
             $tanggal = $this->input->post('tanggal');
             $deskripsi = $this->input->post('deskripsi');
 
@@ -91,7 +91,7 @@ class Dokumentasi extends CI_Controller
 
             if (!$this->upload->do_upload('thumbnail')) {
                 $data = array(
-                    'nama_pengunjung' => $nama_pengunjung,
+                    'nama' => $nama,
                     'tanggal' => $tanggal,
                     'deskripsi' => $deskripsi,
                 );
@@ -103,7 +103,7 @@ class Dokumentasi extends CI_Controller
             } else {
                 $data = array(
                     'thumbnail' => $this->upload->data('file_name'),
-                    'nama_pengunjung' => $nama_pengunjung,
+                    'nama' => $nama,
                     'tanggal' => $tanggal,
                     'deskripsi' => $deskripsi,
                 );

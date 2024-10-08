@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 13 Des 2022 pada 07.57
+-- Waktu pembuatan: 13 Des 2024 pada 07.57
 -- Versi server: 10.4.27-MariaDB
 -- Versi PHP: 7.4.33
 
@@ -18,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `db_wisata`
+-- Database: `db_gmps`
 --
 
 -- --------------------------------------------------------
@@ -30,9 +30,9 @@ SET time_zone = "+00:00";
 CREATE TABLE `tb_dokumentasi` (
   `id_dokumentasi` int(11) NOT NULL,
   `thumbnail` varchar(255) NOT NULL,
-  `nama_pengunjung` varchar(255) NOT NULL,
+  `nama` varchar(255) NOT NULL,
   `tanggal` date NOT NULL,
-  `deskripsi` varchar(255) NOT NULL,
+  `deskripsi` text NOT NULL,
   `views` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
@@ -40,7 +40,7 @@ CREATE TABLE `tb_dokumentasi` (
 -- Dumping data untuk tabel `tb_dokumentasi`
 --
 
-INSERT INTO `tb_dokumentasi` (`id_dokumentasi`, `thumbnail`, `nama_pengunjung`, `tanggal`, `deskripsi`, `views`) VALUES
+INSERT INTO `tb_dokumentasi` (`id_dokumentasi`, `thumbnail`, `nama`, `tanggal`, `deskripsi`, `views`) VALUES
 (2, 'fd3f0bece81024c447e46472e60f0aee.jpg', 'Riana Madya Eka', '2017-09-19', 'Bagus untuk belajar budaya minang kabau', 0),
 (3, '4b78fabfa6fd5321009f5f037c92ecaf.jpg', 'Juwita Putri Utama', '2018-11-09', 'Tempatnya menyenangkan', 0),
 (4, '796736315d7781858ee7ad37fdb1c737.jpg', 'Dharmanika Chantika', '2019-02-09', '', 0),
@@ -96,7 +96,7 @@ CREATE TABLE `tb_settings` (
 --
 
 INSERT INTO `tb_settings` (`id`, `judul_halaman`, `text_sambutan`, `desc_sambutan`, `sampul_website`, `desc_web`, `alamat`, `phone`, `email`, `twitter`, `facebook`, `instagram`) VALUES
-(1, 'Pagaruyuang', 'Welcome To Istana Pagaruyuang', 'Tempat wisata budaya Minang Kabau Sumatera Barat', '03b4a3ae700228c3df2260646144e26f.jpg', 'Istano Basa yang lebih terkenal dengan nama Istana Pagaruyung adalah museum berupa replika istana Kerajaan Pagaruyung', 'Nagari Pagaruyung, Kecamatan Tanjung Emas, Kabupaten Tanah Datar, Sumatra Barat', '+62-81292389150', 'alfigofranspratamaa@gmail.com', '#', '#', 'https://instagram.com/alfigofransp');
+(1, 'Pagaruyuang', 'Welcome To Istana Pagaruyuang', 'Tempat wisata budaya Minang Kabau Sumatera Barat', '03b4a3ae700228c3df2260646144e26f.jpg', 'Istano Basa yang lebih terkenal dengan nama Istana Pagaruyung adalah museum berupa replika istana Kerajaan Pagaruyung', 'Nagari Pagaruyung, Kecamatan Tanjung Emas, Kabupaten Tanah Datar, Sumatra Barat', '+62-81292389150', 'ibraa@gmail.com', '#', '#', 'https://instagram.com/gerakanmahasiswapulauseribu');
 
 -- --------------------------------------------------------
 
@@ -117,7 +117,7 @@ CREATE TABLE `tb_users` (
 --
 
 INSERT INTO `tb_users` (`id_users`, `nama`, `email`, `password`, `role`) VALUES
-(1, 'alfigo', 'alfigofranspratamaa@gmail.com', '$2y$10$TnNdbIitGkEP1r50KIBQF.KToYmu5RmL1vtD.1Hrwzf5zSwSzotA.', '1');
+(1, 'ibra', 'ibra@gmail.com', '$2y$10$TnNdbIitGkEP1r50KIBQF.KToYmu5RmL1vtD.1Hrwzf5zSwSzotA.', '1');
 
 --
 -- Indexes for dumped tables

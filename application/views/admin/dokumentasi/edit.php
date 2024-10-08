@@ -22,9 +22,9 @@ $q = $this->db->get_where('tb_dokumentasi', ['id_dokumentasi' => $id])->row_arra
                             </div>
                         </div>
                         <div class="row mb-3">
-                            <label for="inputText" class="col-sm-3 col-form-label">Nama Pengunjung</label>
+                            <label for="inputText" class="col-sm-3 col-form-label">Author</label>
                             <div class="col-sm-9">
-                                <input type="text" name="nama_pengunjung" value="<?= $q['nama_pengunjung'] ?>" class="form-control" required>
+                                <input type="text" name="nama" value="<?= $q['nama'] ?>" class="form-control" required>
                             </div>
                         </div>
                         <div class="row mb-3">

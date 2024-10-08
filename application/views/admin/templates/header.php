@@ -72,7 +72,7 @@
         <li class="nav-item">
             <a class="nav-link collapsed" href="<?= base_url('admins/quote') ?>">
                 <i class="bi bi-chat-quote-fill"></i>
-                <span>Kata Pengunjung</span>
+               <span>Quote</span>
             </a>
         </li>
         <li class="nav-item">

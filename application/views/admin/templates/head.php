@@ -15,8 +15,8 @@ $users = $this->session->userdata('users');
     <meta content="" name="keywords">
 
     <!-- Favicons -->
-    <link href="<?= base_url('vendor/admin/') ?>assets/img/favicon.png" rel="icon">
-    <link href="<?= base_url('vendor/admin/') ?>assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+    <!-- <link href="<?= base_url('vendor/admin/') ?>assets/img/favicon.png" rel="icon"> -->
+    <link href="<?= base_url('vendor/admin/') ?>assets/img/logo-gmps.png" rel="icon">
 
     <!-- Google Fonts -->
     <link href="https://fonts.gstatic.com" rel="preconnect">

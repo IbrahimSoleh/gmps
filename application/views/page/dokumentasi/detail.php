@@ -38,8 +38,8 @@
                     <div class="portfolio-info">
                         <h3>Informasi</h3>
                         <ul>
-                            <li><strong>Nama Pengunjung</strong>: <?= $dokumentasi['nama_pengunjung'] ?></li>
-                            <li><strong>Tanggal Berkunjung</strong>: <?= $dokumentasi['tanggal']; ?></li>
+                            <li><strong>author</strong>: <?= $dokumentasi['nama'] ?></li>
+                            <li><strong>date</strong>: <?= $dokumentasi['tanggal']; ?></li>
                             <li>
                                 <p>
                                     "<?php echo $dokumentasi['deskripsi'] ?>"

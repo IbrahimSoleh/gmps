@@ -7,9 +7,9 @@
             <div class="row no-gutters">
                 <div class="content col-xl-5 d-flex align-items-stretch" data-aos="fade-up">
                     <div class="content">
-                        <h3>Sejarah <?= $settings['judul_halaman'] ?></h3>
+                        <h3>About <?= $settings['judul_halaman'] ?></h3>
                         <p>
-                            Istana Pagaruyung pada mulanya dibangun di Bukit Batu Patah dan terbakar saat terjadi Perang Padri pada tahun 1804. Istana baru sempat dibangun kembali, tetapi terbakar pada tahun 1966.
+                        Gerakan mahasiswa kepulauan seribu(GMPS) merupakan organisasi baru yang berada di kepulauan seribu  dengan tujuan utama menumbuhkan kesejahteraan di Kepulauan Seribu. Dalam rangka melaksanakan usaha-usaha untuk kesejahteraan sosial di wilayah ini. Untuk mencapai tujuannya, GMPS merencanakan berbagai inisiatif, mulai dari program pendidikan, pelatihan keterampilan, hingga proyek-proyek lingkungan.
                         </p>
                         <!-- <a href="#" class="about-btn">Baca Selengkapnya <i class="bx bx-chevron-right"></i></a> -->
                     </div>
@@ -19,19 +19,20 @@
                         <div class="row">
                             <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="100">
                                 <i class="bx bx-receipt"></i>
-                                <h4>Explore</h4>
+                                <h4>VISI</h4>
+                                <h6>"Mewujudkan Kepulauan Seribu yang sejahtera, berdaya saing, dan berkelanjutan melalui pengembangan potensi mahasiswa dan partisipasi masyarakat."</h6>
                             </div>
                             <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="200">
                                 <i class="bx bx-cube-alt"></i>
-                                <h4>Berwisata</h4>
-                            </div>
-                            <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="300">
-                                <i class="bx bx-images"></i>
-                                <h4>Moments</h4>
-                            </div>
-                            <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="400">
-                                <i class="bx bx-shield"></i>
-                                <h4>Mengenal Budaya</h4>
+                                <h4>MISI</h4>
+                                <p>
+                                    <ol>
+                                        <li>Meningkatkan kemampuan kepemimpinan dan organisasi di kalangan mahasiswa.</li>
+                                        <li>Melaksanakan program yang meningkatkan kesejahteraan sosial dan ekonomi masyarakat.</li>
+                                        <li>Menjalankan program kesadaran lingkungan dan proyek konservasi di kepulauan seribu. </li>
+                                        <li>Mengembangkan strategi penggalangan dana untuk mendukung program dan kegiatan GMPS.</li>
+                                    </ol>
+                                </p>
                             </div>
                         </div>
                     </div><!-- End .content-->
@@ -42,7 +43,7 @@
     </section><!-- End About Section -->
 
     <!-- ======= Counts Section ======= -->
-    <section id="counts" class="counts  section-bg">
+    <!-- <section id="counts" class="counts  section-bg">
         <div class="container">
 
             <div class="row no-gutters">
@@ -82,7 +83,7 @@
             </div>
 
         </div>
-    </section><!-- End Counts Section -->
+    </section>End Counts Section -->
 
     <!-- ======= Portfolio Section ======= -->
     <section id="dokumentasi" class="portfolio">
@@ -90,7 +91,7 @@
 
             <div class="section-title" data-aos="fade-in" data-aos-delay="100">
                 <h2>Dokumentasi</h2>
-                <p>Dokumentasi para Pengunjung Wisatawan</p>
+                <p>Dokumentasi Kegiatan GMPS</p>
             </div>
 
             <div class="row portfolio-container" data-aos="fade-up">
@@ -101,7 +102,7 @@
                         <div class="portfolio-wrap">
                             <img src="<?= base_url('vendor/dokumentasi/') . $row->thumbnail ?>" style="width: 100% !important; height: 336px !important; object-fit:cover;" class="img-fluid" alt="">
                             <div class="portfolio-links">
-                                <a href="<?= base_url('vendor/dokumentasi/') . $row->thumbnail ?>" data-gallery="portfolioGallery" class="portfolio-lightbox" title="<?= $row->nama_pengunjung ?>"><i class="bx bx-plus"></i></a>
+                                <a href="<?= base_url('vendor/dokumentasi/') . $row->thumbnail ?>" data-gallery="portfolioGallery" class="portfolio-lightbox" title="<?= $row->nama ?>"><i class="bx bx-plus"></i></a>
                                 <a href="<?= base_url('landingpage/dokumentasi/') . $row->id_dokumentasi ?>#portfolio-details" title="More Details"><i class="bx bx-link"></i></a>
                             </div>
                         </div>
@@ -121,12 +122,12 @@
     </section><!-- End Portfolio Section -->
 
     <!-- ======= Testimonials Section ======= -->
-    <section id="katapengunjung" class="testimonials section-bg">
+    <section id="other" class="testimonials section-bg">
         <div class="container">
 
             <div class="section-title" data-aos="fade-in" data-aos-delay="100">
-                <h2>Apa Kata Pengunjung</h2>
-                <p>Quote, Saran, Masukan, Pendapat Pengunjung Istana Pagaruyuang</p>
+                <h2>Coming soon!</h2>
+                <p>Quote, Saran, Masukan, Pendapat</p>
             </div>
 
             <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
@@ -171,7 +172,7 @@
                     <div class="info-box mb-4">
                         <i class="bx bx-map"></i>
                         <h3>Alamat</h3>
-                        <p>Kabupaten Tanah Datar, Sumatera Barat 27281</p>
+                        <p>Panggang Island, Kepulauan Seribu Regency, Jakarta 14530</p>
                     </div>
                 </div>
 
@@ -196,7 +197,7 @@
             <div class="row">
 
                 <div class="col-lg-6 ">
-                    <iframe class="mb-4 mb-lg-0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.6833452086385!2d100.61921621445525!3d-0.4712910354122696!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e2ad2d2be29c7dd%3A0xb19e3eb230efffbc!2sIstano%20Rajo%20Basa%20Pagaruyung!5e0!3m2!1sid!2sid!4v1670599428431!5m2!1sid!2sid" frameborder="0" style="border:0; width: 100%; height: 384px;" allowfullscreen></iframe>
+                    <iframe class="mb-4 mb-lg-0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6676.378558665513!2d106.60024778769866!3d-5.742137004395198!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6a753dbe722c25%3A0xa4b29a15f0315b41!2sRPTRA%20Tanjong%20Timor!5e0!3m2!1sen!2sid!4v1722950851970!5m2!1sen!2sid" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" frameborder="0" style="border:0; width: 100%; height: 384px;" allowfullscreen></iframe>
                 </div>
 
                 <div class="col-lg-6">

@@ -11,7 +11,7 @@
                 <tr>
                     <th scope="col">#</th>
                     <th scope="col" style="width: 20% !important;">Thumbnail</th>
-                    <th scope="col">Nama Pengunjung</th>
+                    <th scope="col">Author</th>
                     <th scope="col">Tanggal</th>
                     <th scope="col">Deskripsi</th>
                     <th scope="col">Aksi</th>
@@ -25,7 +25,7 @@
                     <tr>
                         <td><?= $no++; ?></td>
                         <td><img src="<?= base_url('vendor/dokumentasi/') . $row->thumbnail ?>" class="img-thumbnail" alt=""></td>
-                        <td><?= $row->nama_pengunjung; ?></td>
+                        <td><?= $row->nama; ?></td>
                         <td><?= $row->tanggal; ?></td>
                         <td><?= $row->deskripsi; ?></td>
                         <td>

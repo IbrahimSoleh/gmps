@@ -27,7 +27,7 @@
 
     <div class="container">
         <div class="copyright">
-            &copy; Copyright <strong><span>Alfigo Frans Pratama</span></strong>. All Rights Reserved
+            &copy; Copyright <strong><span>Ibra</span></strong>. All Rights Reserved@2024
         </div>
     </div>
 </footer><!-- End Footer -->
